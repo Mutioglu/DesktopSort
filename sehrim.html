@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehrim: Akçakoca - Ensar Efe Mutioğlu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <style>
+        /* Slider Sabit Yükseklik ve Resim Ortalama Ayarları */
+        #sehir-slider .carousel-inner {
+            height: 500px;
+            /* Slider yüksekliğini buradan istediğiniz gibi değiştirebilirsiniz (örn: 450px veya 60vh) */
+        }
+
+        #sehir-slider .carousel-item {
+            height: 100%;
+        }
+
+        #sehir-slider .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            /* Resmi en-boy oranını bozmadan belirlenen alana sığdırır */
+            object-position: center;
+            /* Resmi tam merkezden hizalar */
+        }
+
+        /* Yön butonlarının her koşulda (karanlık modda bile) beyaz görünmesini garantiye almak için */
+        #sehir-slider .carousel-control-prev-icon,
+        #sehir-slider .carousel-control-next-icon {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Ensar Efe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.php">Giriş Yap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Batı Karadeniz'in İncisi: Akçakoca</h1>
+
+        <section id="sehir-slider" class="mb-5">
+            <!-- data-bs-theme="light" eklenerek kontrollerin beyaz olması zorlandı -->
+            <div id="akcakocaCarousel" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel"
+                data-bs-theme="light">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#akcakocaCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#akcakocaCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#akcakocaCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#akcakocaCarousel" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner text-white">
+                    <div class="carousel-item active">
+                        <img src="cenevizkalesi.jpg" class="d-block w-100" alt="Ceneviz Kalesi">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded text-white">
+                            <h5>Ceneviz Kalesi</h5>
+                            <p>Tarihin ve denizin iç içe geçtiği UNESCO geçici mirasımız.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="aktasselalesi.jpg" class="d-block w-100" alt="Aktaş Şelalesi">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded text-white">
+                            <h5>Aktaş Şelalesi</h5>
+                            <p>Yeşilin her tonunu barındıran doğa harikası.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fakillimagarasi.jpg" class="d-block w-100" alt="Fakıllı Mağarası">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded text-white">
+                            <h5>Fakıllı Mağarası</h5>
+                            <p>Sarkıt ve dikitleriyle büyüleyici bir yeraltı dünyası.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="merkezcami.jpg" class="d-block w-100" alt="Akçakoca Merkez Camii">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded text-white">
+                            <h5>Akçakoca Sahili ve Merkez Camii</h5>
+                            <p>Selçuklu otağ çadırından esinlenen benzersiz mimarisiyle.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#akcakocaCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#akcakocaCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sonraki</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="row mt-4">
+            <div class="col-md-8">
+                <article class="bg-body-tertiary p-4 rounded shadow-sm">
+                    <h2 class="text-info">Akçakoca Hakkında</h2>
+                    <p>Düzce'nin Karadeniz'e açılan kapısı olan Akçakoca, uçsuz bucaksız fındık bahçeleri, masmavi
+                        denizi ve tarihi dokusuyla Batı Karadeniz'in en gözde turizm merkezlerinden biridir. Yeşille
+                        mavinin buluştuğu bu şirin sahil kasabası, huzur dolu bir atmosfere sahiptir.</p>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item bg-transparent"><strong>Nüfus:</strong> Yaklaşık 40.000+</li>
+                        <li class="list-group-item bg-transparent"><strong>Gezilecek Yerler:</strong> Ceneviz Kalesi,
+                            Aktaş Şelalesi, Fakıllı Mağarası, Çuhallı Çarşısı.</li>
+                        <li class="list-group-item bg-transparent"><strong>Meşhur Lezzetleri:</strong> Mancarlı Pide,
+                            Melengücceği Tatlısı ve taptaze deniz ürünleri.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="bg-info text-dark p-4 rounded shadow-sm h-100">
+                    <h4>Biliyor muydunuz?</h4>
+                    <p>Akçakoca Ceneviz Kalesi, denizden gelebilecek tehlikelere karşı inşa edilmiş olup dünyadaki nadir
+                        kale-plaj konseptlerinden birini sunar. Ayrıca bölgenin fındığı dünya standartlarında bir
+                        kaliteye sahiptir!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5 border-top border-secondary">
+        <p class="mb-0">© 2026 Ensar Efe Mutioğlu - Web Teknolojileri Projesi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
