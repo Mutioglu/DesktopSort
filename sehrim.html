@@ -11,10 +11,12 @@
 
 <body>
     <style>
-        /* Slider Sabit Yükseklik ve Resim Ortalama Ayarları */
+        /* Slider Sabit Yükseklik, Otomatik Genişlik ve Oran Koruma Ayarları */
         #sehir-slider .carousel-inner {
             height: 500px;
-            /* Slider yüksekliğini buradan istediğiniz gibi değiştirebilirsiniz (örn: 450px veya 60vh) */
+            /* Sadece yüksekliği sabitliyoruz (İsteğinize göre değiştirebilirsiniz) */
+            background-color: #212529;
+            /* Genişlik otomatik olacağı için yanlarda kalabilecek boşlukları karanlık temayla uyumlu renkle doldurur */
         }
 
         #sehir-slider .carousel-item {
@@ -22,18 +24,29 @@
         }
 
         #sehir-slider .carousel-item img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            /* Resmi en-boy oranını bozmadan belirlenen alana sığdırır */
-            object-position: center;
-            /* Resmi tam merkezden hizalar */
+            height: 100%;
+            /* Container'ın yüksekliğini (500px) tam alır */
+            width: auto;
+            /* Genişlik orijinal en-boy oranına göre otomatik hesaplanır */
+            max-width: 100%;
+            /* Ekran küçüldüğünde (mobil vb.) resmin dışarı taşmasını engeller */
+            object-fit: contain;
+            /* Resmi hiçbir şekilde kesmeden ve büzmeden alana sığdırır */
+            margin: 0 auto;
+            /* Resmi yatay eksende tam ortaya hizalar */
+            display: block;
+            /* Ortalama işleminin sorunsuz çalışması için gereklidir */
         }
 
-        /* Yön butonlarının her koşulda (karanlık modda bile) beyaz görünmesini garantiye almak için */
+        /* Sağ ve Sol Slider Butonlarını Kesin Olarak Beyaz Yapma */
         #sehir-slider .carousel-control-prev-icon,
         #sehir-slider .carousel-control-next-icon {
-            filter: invert(1) grayscale(100%) brightness(200%);
+            filter: invert(1) grayscale(100%) brightness(200%) !important;
+        }
+
+        /* Alt Gösterge Çizgilerini Beyaz Yapma */
+        #sehir-slider .carousel-indicators [data-bs-target] {
+            background-color: #ffffff !important;
         }
     </style>
     <header>
