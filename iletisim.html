@@ -26,6 +26,7 @@
                         <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
                         <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
                         <li class="nav-item"><a class="nav-link active" href="iletisim.html">İletişim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.php">Giriş Yap</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,12 +45,7 @@
                     </ul>
                 </div>
 
-                <div v-if="basarili" class="alert alert-success" role="alert">
-                    Mesajınız başarıyla gönderildi.
-                </div>
-
-                <form id="iletisimFormu" @submit.prevent="formuDenetle">
-                    
+                <form id="iletisimFormu" action="islem.php" method="POST" @submit.prevent="formuDenetle">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="adsoyad" class="form-label">Adınız Soyadınız</label>
@@ -112,7 +108,6 @@
                         <button type="submit" class="btn btn-outline-success">Gönder</button>
                         <button type="reset" class="btn btn-outline-secondary" @click="formuTemizle">Formu Temizle</button>
                     </div>
-
                 </form>
             </div>
         </div>
@@ -139,14 +134,12 @@
                         konu: [],
                         mesaj: ''
                     },
-                    hatalar: [],
-                    basarili: false
+                    hatalar: []
                 }
             },
             methods: {
                 formuDenetle() {
                     this.hatalar = [];
-                    this.basarili = false;
                     const epostaBicimi = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                     const telefonBicimi = /^\d+$/;
 
@@ -156,13 +149,11 @@
                     if (!this.formVerileri.mesaj.trim()) this.hatalar.push("Mesaj alanı boş bırakılamaz.");
 
                     if (this.hatalar.length === 0) {
-                        this.basarili = true;
-                        setTimeout(() => this.formuTemizle(), 3000);
+                        document.getElementById('iletisimFormu').submit();
                     }
                 },
                 formuTemizle() {
                     this.hatalar = [];
-                    this.basarili = false;
                     this.formVerileri = {
                         adsoyad: '',
                         eposta: '',

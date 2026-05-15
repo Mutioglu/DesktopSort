@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İlgi Alanlarım - Ensar Efe Mutioğlu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .interest-card { transition: transform 0.3s; border: none; }
         .interest-card:hover { transform: translateY(-10px); }
+        .hover-karti { transition: transform 0.3s ease; }
+        .hover-karti:hover { transform: translateY(-10px); }
     </style>
 </head>
 <body>
@@ -28,6 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
                         <li class="nav-item"><a class="nav-link active" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
                         <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.php">Giriş Yap</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,36 +42,45 @@
         <h1 class="text-center mb-5 text-info">Kişisel İlgi Alanlarım ve Tutkularım</h1>
 
         <section class="row g-4 mb-5">
-            <div class="col-md-4">
-                <div class="card h-100 bg-body-tertiary shadow interest-card">
+            <div class="col-md-12">
+                <div class="card h-100 bg-body-tertiary shadow interest-card p-3">
                     <div class="card-body">
-                        <h3 class="card-title text-danger">Futbol ve Spor</h3>
-                        <p class="card-text">
-                            Küçüklüğümden beri yeşil sahalara olan tutkum hiç azalmadı. Futbol, benim için sadece bir oyun değil; stratejinin, disiplinin ve takım ruhunun en saf halidir. Sadece maçları izlemekle kalmıyor, aynı zamanda sporun istatistiksel tarafına ve taktiksel analizlerine de kafa yoruyorum. Düzcespor gibi yerel değerlerimize sahip çıkmanın yanı sıra, dünya futbolundaki modern değişimleri de yakından takip ediyorum. Sporun birleştirici gücü, yoğun mühendislik derslerinin arasında benim için en büyük motivasyon kaynaklarından biri haline geldi. Darağcında olsak bile son sözümüz Fenerbahçe :).
+                        <h3 class="card-title text-danger mb-3">Fitness ve Sağlıklı Yaşam</h3>
+                        <p class="card-text" style="line-height: 1.8;">
+                            Yoğun akademik sürecimi ve masa başında geçen uzun kodlama seanslarını dengelemek için düzenli olarak fitness ve vücut geliştirme ile ilgileniyorum. Özellikle bir "hardgainer" olarak kas kütlemi artırmak ve yapısal olarak daha güçlü bir fiziğe ulaşmak en büyük hedeflerimden biri. Bu doğrultuda kendime yüksek kalorili özel beslenme programları hazırlıyor ve hedefim olan artı 10 kilograma ulaşmak için disiplinli bir ağırlık antrenmanı rutini uyguluyorum. Salonda geçirdiğim zaman, sadece fiziksel bir gelişim değil; aynı zamanda zihinsel bir detoks sağlıyor. Spordaki bu istikrarım ve pes etmeme motivasyonum, hayatımın diğer alanlarındaki odaklanma becerimi, algoritmik problemlere yaklaşımımı ve stres yönetimi kapasitemi de büyük ölçüde artırıyor.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card h-100 bg-body-tertiary shadow interest-card">
+            <div class="col-md-12">
+                <div class="card h-100 bg-body-tertiary shadow interest-card p-3">
                     <div class="card-body">
-                        <h3 class="card-title text-success">Yazılım Geliştirme</h3>
-                        <p class="card-text">
-                            Bilgisayar Mühendisliği öğrencisi olarak kod yazmak benim için bir zorunluluktan öte, yaratıcı bir ifade biçimi. C++ ile başladığım bu yolculukta nesne yönelimli programlamanın derinliklerine inmekten, modern web teknolojileriyle fonksiyonel arayüzler tasarlamaya kadar her aşamadan büyük keyif alıyorum. Sadece çalışan bir kod yazmak değil, aynı zamanda temiz, sürdürülebilir ve verimli yapılar kurmak üzerine odaklanıyorum. Geliştirdiğim her yeni proje, teknik becerilerimi bir adım öteye taşırken, mühendislik bakış açımı da güçlendiriyor.
+                        <h3 class="card-title text-success mb-3">Yazılım Geliştirme</h3>
+                        <p class="card-text" style="line-height: 1.8;">
+                            Bilgisayar Mühendisliği öğrencisi olarak kod yazmak benim için bir zorunluluktan öte, yaratıcı bir ifade biçimi ve bitmek bilmeyen bir keşif yolculuğu. C++ ile başladığım bu serüvende nesne yönelimli programlamanın (OOP) derinliklerine inmekten, karmaşık projelerde temiz mimariler kurmaktan büyük keyif alıyorum. Sadece arka plan sistemleriyle yetinmiyor; HTML, CSS, Bootstrap gibi modern web teknolojilerini kullanarak son kullanıcıya hitap eden, responsive ve şık arayüzler tasarlamaya da özen gösteriyorum. Geliştirdiğim projeleri GitHub üzerinden versiyonlayarak profesyonel bir iş akışı oluşturmaya gayret ediyorum. Sadece çalışan bir kod yazmak değil, aynı zamanda temiz, sürdürülebilir ve başkaları tarafından kolayca okunabilen verimli yapılar kurmak üzerine odaklanıyor, her yeni satır kodda kendimi bir adım öteye taşıyorum.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card h-100 bg-body-tertiary shadow interest-card">
+            <div class="col-md-12">
+                <div class="card h-100 bg-body-tertiary shadow interest-card p-3">
                     <div class="card-body">
-                        <h3 class="card-title text-warning">Yapay Zeka</h3>
-                        <p class="card-text">
-                            Teknolojinin en heyecan verici sınırı olan Yapay Zeka, merakımı her geçen gün daha da artırıyor. Özellikle görüntü işleme teknolojileri ve yapay zeka destekli üretken araçların yazılım dünyasını nasıl dönüştürdüğünü gözlemlemek büyüleyici. Günlük hayattaki basit işlerden karmaşık mühendislik hesaplamalarına kadar AI'nın sunduğu sınırsız potansiyeli anlamaya çalışıyor, bu alandaki güncel makaleleri ve trendleri yakından takip ediyorum. Gelecekte kendi yazılım projelerimi bu akıllı sistemlerle nasıl entegre edebileceğim üzerine kafa yormak, mesleki vizyonumu şekillendiriyor.
+                        <h3 class="card-title text-warning mb-3">Yapay Zeka</h3>
+                        <p class="card-text" style="line-height: 1.8;">
+                            Teknolojinin en heyecan verici sınırı olan Yapay Zeka (AI), merakımı her geçen gün daha da artırıyor ve mühendislik vizyonuma yeni ufuklar katıyor. Özellikle makine öğrenmesi, görüntü işleme teknolojileri ve yapay zeka destekli üretken araçların yazılım dünyasını nasıl kökünden dönüştürdüğünü gözlemlemek gerçekten büyüleyici. Günlük hayattaki basit otomasyon işlerinden karmaşık mühendislik algoritmalarına kadar AI'nın sunduğu sınırsız potansiyeli anlamaya çalışıyor, bu alandaki akademik makaleleri ve trendleri yakından takip ediyorum. Gelecekte, C++ ve web tabanlı kendi yazılım projelerimi bu akıllı sistemlerle nasıl entegre edebileceğim üzerine kafa yormak ve otonom sistemler geliştirmek en büyük teknolojik hedeflerim arasında yer alıyor.
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 border-top border-secondary pt-5">
+            <h2 class="text-center text-info mb-5"><i class="bi bi-film"></i> Favori Dizilerim</h2>
+            <div class="row justify-content-center" id="dizi-sonuclari">
+                <div class="col-12 text-center" id="loading-dizi">
+                    <div class="spinner-border text-warning" role="status"></div>
                 </div>
             </div>
         </section>
@@ -78,5 +91,48 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const favoriDiziler = ['breaking bad', 'game of thrones', 'kurtlar vadisi', 'yeralti'];
+            const diziAlani = document.getElementById('dizi-sonuclari');
+            const diziLoading = document.getElementById('loading-dizi');
+
+            try {
+                const diziIstekleri = favoriDiziler.map(dizi => 
+                    fetch(`https://api.tvmaze.com/search/shows?q=${encodeURIComponent(dizi)}`)
+                        .then(res => res.json())
+                );
+                const diziSonuclar = await Promise.all(diziIstekleri);
+                diziLoading.style.display = 'none';
+
+                diziSonuclar.forEach(diziSonucu => {
+                    if (diziSonucu.length > 0) {
+                        const show = diziSonucu[0].show;
+                        const imageUrl = show.image ? show.image.medium : 'https://via.placeholder.com/210x295?text=Afis+Yok';
+                        const puan = show.rating && show.rating.average ? show.rating.average : 'Bilinmiyor';
+                        const turler = show.genres.length > 0 ? show.genres.join(', ') : 'Belirtilmemis';
+
+                        const kartHtml = `
+                            <div class="col-md-3 mb-4">
+                                <div class="card h-100 bg-body-tertiary border-secondary shadow-sm hover-karti">
+                                    <img src="${imageUrl}" class="card-img-top" alt="${show.name}" style="height: 350px; object-fit: cover;">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title text-warning">${show.name}</h5>
+                                        <p class="card-text small text-muted mb-1">Tür: ${turler}</p>
+                                        <p class="card-text small mb-3">⭐ IMDB/TV Puanı: ${puan}</p>
+                                        <a href="${show.url}" target="_blank" class="btn btn-outline-info mt-auto btn-sm">Detayları İncele</a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        diziAlani.innerHTML += kartHtml;
+                    }
+                });
+            } catch (hata) {
+                diziLoading.style.display = 'none';
+                diziAlani.innerHTML = '<p class="text-danger text-center">Dizi verileri yüklenemedi.</p>';
+            }
+        });
+    </script>
 </body>
 </html>
